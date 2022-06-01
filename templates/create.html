@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+
+{% block body %}
+<form class="m-5" action="/" method="POST">
+    <div class="mb-3 pb-3">
+        <label for="title" class="form-label">TITLE</label>
+        <input type="text" class="form-control" name="title">   
+    </div>
+    <div class="mb-3 pb-3">
+        <label for="detail" class="form-label">Detail</label>
+        <input type="text" class="form-control" name="detail"> 
+    </div>
+    <div class="mb-3 pb-3">
+        <label for="due" class="form-check-label">Due</label>
+        <input type="date" class="form-check-input" name="due" required>
+    </div>
+    <a class="btn btn-outline-primary" href="/" role="button">Return</a>
+    <button type="submit" class="btn btn-primary" value="Create">Create</button>
+  </form>
+
+{% endblock %}
